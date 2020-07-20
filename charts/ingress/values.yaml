@@ -10,3 +10,9 @@ ingress:
           backend:
             serviceName: serviceName
             servicePort: 8080
+     - host: chart-example.local
+      paths: 
+        - path: /healthz
+          backend:
+            serviceName: healthService
+            servicePort: 8080
